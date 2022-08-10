@@ -8,5 +8,14 @@
   }
 
   &--header {
+    @include breakpoint($breakpoint-laptop) {
+      width: 130px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 90px;
+    }
+
+    width: 180px;
   }
 }

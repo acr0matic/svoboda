@@ -11,4 +11,41 @@
 
   &__link {
   }
+
+  &--header {
+    .nav__list {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav__item {
+      &:not(:last-child) {
+        @include breakpoint($breakpoint-laptop) {
+          margin-right: 60px;
+        }
+
+        @include breakpoint($breakpoint-tablet--large) {
+          margin-right: 40px;
+        }
+
+        margin-right: 80px;
+      }
+    }
+
+    .nav__link {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--big - 2px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small;
+      }
+
+      font-size: $font-size__text--big;
+    }
+  }
 }

@@ -3,9 +3,34 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
 }
 
 .header {
+  position: sticky;
+  top: 0;
 
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--big - 2px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
+    }
+
+    font-size: $font-size__text--big;
+  }
 }

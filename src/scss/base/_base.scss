@@ -10,6 +10,7 @@ body {
 
 html {
   box-sizing: border-box;
+  background-color: $palette-white;
   font-size: 16px;
 }
 
@@ -57,7 +58,7 @@ textarea {
 }
 
 a {
-  color: $color-text__black;
+  color: $color-text__brown;
   text-decoration: none;
 }
 
