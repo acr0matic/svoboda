@@ -7,10 +7,17 @@
 
 .header {
   position: sticky;
+  z-index: $z-index-header;
   top: 0;
 
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: $palette-white;
+
+  &--shadow {
+    box-shadow: 0 0 5px rgba($palette-black, 0.1);
+  }
 
   &__wrapper {
     display: flex;

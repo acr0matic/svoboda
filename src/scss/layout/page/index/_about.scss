@@ -1,0 +1,32 @@
+#about {
+}
+
+.about {
+  &__picture {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 10px;
+    }
+
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 245px 245px 0 0;
+  }
+
+  &__legend {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large - 2px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular - 4px;
+    }
+
+    color: $color-text__brown;
+    font-size: $font-size__title--small;
+    text-align: center;
+  }
+}
