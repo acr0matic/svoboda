@@ -18,4 +18,16 @@
 
     width: 180px;
   }
+
+  &--footer {
+    @include breakpoint($breakpoint-laptop) {
+      width: 120px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 80px;
+    }
+
+    width: 145px;
+  }
 }

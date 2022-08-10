@@ -3,9 +3,65 @@
 // -----------------------------------------------------------------------------
 
 #footer {
-
 }
 
 .footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
 
+  background-color: $palette-black;
+  color: $palette-white;
+
+  a {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
+    }
+
+    color: $palette-white;
+    font-size: $font-size__title--small;
+  }
+
+  &__wrapper {
+  }
+
+  &__company {
+  }
+
+  &__logo {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 45px;
+    }
+
+    margin-bottom: 70px;
+  }
+
+  &__copyright {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
+    }
+
+    font-size: $font-size__title--small;
+  }
+
+  &__contact {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 30px;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+  }
+
+  &__social {
+  }
 }

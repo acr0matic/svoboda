@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  &__link {
+  }
+
+  &__icon {
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &--footer {
+    .social__link {
+      &:not(:last-child) {
+        @include breakpoint($breakpoint-tablet--large) {
+          margin-right: 30px;
+        }
+
+        margin-right: 50px;
+      }
+    }
+
+    .social__icon {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 18px;
+      }
+
+      width: 36px;
+    }
+  }
+}
