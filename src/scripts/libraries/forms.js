@@ -28,6 +28,7 @@ class Form {
     this.Init();
     this.Mask();
     this.Listener();
+
   }
 
   Init() {

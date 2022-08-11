@@ -19,6 +19,18 @@
     width: 180px;
   }
 
+  &--certificate {
+    @include breakpoint($breakpoint-laptop) {
+      width: 150px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 120px;
+    }
+
+    width: 180px;
+  }
+
   &--footer {
     @include breakpoint($breakpoint-laptop) {
       width: 120px;
