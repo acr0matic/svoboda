@@ -1,5 +1,5 @@
 .section {
-  margin-bottom: 110px;
+  padding-bottom: 130px;
 
   &__header {
     @include breakpoint($breakpoint-laptop--medium) {
