@@ -1,0 +1,16 @@
+.input {
+  &__field {
+    width: 100%;
+    padding-bottom: 20px;
+
+    border: none;
+    border-bottom: 1px solid #5a3600;
+
+    background-color: transparent;
+
+    color: $color-text__brown;
+
+    font-weight: $weight-Light;
+    font-family: FuturaPT, sans-serif;
+  }
+}

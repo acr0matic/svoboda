@@ -16,7 +16,12 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  &--background {
+  &--hidden {
+    top: -100%;
+  }
+
+  &--sticky {
+    position: fixed;
     background-color: $palette-white--pale;
     box-shadow: 0 3px 1px rgba(#000000, 0.028), 0 1px 4px rgba(#000000, 0.042);
   }
