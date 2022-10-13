@@ -3,9 +3,33 @@
 // -----------------------------------------------------------------------------
 
 body {
+  @include breakpoint($breakpoint-laptop--medium) {
+    font-size: $font-size__text--big;
+  }
+
+  @include breakpoint($breakpoint-laptop) {
+    font-size: $font-size__text--regular;
+  }
+
+  @include breakpoint($breakpoint-tablet--large) {
+    font-size: $font-size__text--regular - 4px;
+  }
+
   font-weight: $weight-Light;
-  font-size: $font-size__text--regular;
+  font-size: $font-size__text--large;
   font-family: FuturaPT, sans-serif;
 
   line-height: $line-height--primary;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-text__brown;
+
+  font-weight: $weight-Regular;
+  font-style: normal;
+  font-family: ViaodaLibre, serif;
+
+  letter-spacing: 1px;
 }

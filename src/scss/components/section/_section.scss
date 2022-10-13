@@ -2,28 +2,18 @@
   margin-bottom: 110px;
 
   &__header {
-    @include breakpoint($breakpoint-tablet--large) {
-      margin-bottom: 30px;
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 25px;
     }
 
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   &__title {
-    @include breakpoint($breakpoint-laptop) {
-      font-size: $font-size__text--large;
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__title--small;
     }
 
-    @include breakpoint($breakpoint-tablet--large) {
-      font-size: $font-size__text--big;
-    }
-
-    color: $color-text__brown;
-
-    font-weight: $weight-Regular;
     font-size: $font-size__title--medium;
-    font-family: ViaodaLibre, serif;
-
-    text-align: center;
   }
 }

@@ -6,17 +6,19 @@
 }
 
 .header {
-  position: sticky;
+  position: absolute;
   z-index: $z-index-header;
   top: 0;
+  left: 0;
+
+  width: 100%;
 
   padding-top: 30px;
   padding-bottom: 30px;
 
-  background-color: $palette-white;
-
-  &--shadow {
-    box-shadow: 0 0 5px rgba($palette-black, 0.1);
+  &--background {
+    background-color: $palette-white--pale;
+    box-shadow: 0 3px 1px rgba(#000000, 0.028), 0 1px 4px rgba(#000000, 0.042);
   }
 
   &__wrapper {
