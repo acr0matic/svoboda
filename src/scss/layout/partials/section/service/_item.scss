@@ -1,0 +1,65 @@
+.service-item {
+  @include odd {
+    .service-item__content {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(
+        270deg,
+        #916b4c 1%,
+        rgba($color: #977e68, $alpha: 0) 100%
+      );
+    }
+  }
+
+  @include even {
+    .service-item__content {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(
+        90deg,
+        #916b4c 1%,
+        rgba($color: #977e68, $alpha: 0) 100%
+      );
+    }
+  }
+
+  position: relative;
+  padding: 100px 0 120px;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    color: $color-text__white;
+  }
+
+  &__title,
+  &__description {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,40 @@
+.button {
+  &--round {
+    border-radius: 100px;
+  }
+
+  &--white {
+    border-color: $palette-white;
+    color: $color-text__white;
+
+    &.button--arrow::after {
+      background-image: url("../img/icons/control/button__arrow--white.svg");
+    }
+  }
+
+  &--arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (hover: hover) {
+      &:hover::after {
+        background-image: url("../img/icons/control/button__arrow--white.svg");
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 85px;
+      height: 35px;
+
+      margin-left: 30px;
+
+      background-image: url("../img/icons/control/button__arrow.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      transition: $transition ease;
+    }
+  }
+}
