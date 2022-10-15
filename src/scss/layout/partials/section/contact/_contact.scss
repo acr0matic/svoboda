@@ -1,0 +1,31 @@
+#contact {
+}
+
+.contact {
+  &__list {
+    li,
+    a {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      margin-top: 6px;
+      margin-right: 16px;
+    }
+  }
+
+  &__map {
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 420px;
+    }
+
+    height: 530px;
+  }
+}
