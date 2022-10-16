@@ -1,0 +1,43 @@
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      width: 72px;
+      height: 72px;
+      background-color: rgba($color: #f8f0ed, $alpha: 0.7);
+
+      transition: $transition ease;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: #f8f0ed;
+        }
+      }
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      &.swiper-button-disabled {
+        opacity: 0;
+      }
+    }
+
+    &-prev {
+      &::after {
+        background-image: url("../img/icons/control/slider__prev.svg");
+      }
+    }
+
+    &-next {
+      &::after {
+        background-image: url("../img/icons/control/slider__next.svg");
+      }
+    }
+  }
+}

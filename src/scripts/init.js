@@ -8,3 +8,5 @@ const lazyLoadInstance = new LazyLoad({
     if (loader) loader.classList.add('preloader--hide');
   },
 });
+
+InitSlider();
