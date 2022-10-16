@@ -1,0 +1,41 @@
+#team {
+  position: relative;
+
+  &::after {
+    @include breakpoint($breakpoint-laptop--large) {
+      left: calc(-50% + 100px);
+    }
+
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-50% - 100px);
+
+    display: block;
+    width: 150%;
+    height: 100%;
+
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+
+    background-color: $palette-white;
+  }
+}
+
+.team {
+  position: relative;
+  z-index: 2;
+
+  &__slider {
+    .swiper-control {
+      .swiper-button-prev {
+        left: -100px;
+      }
+
+      .swiper-button-next {
+        right: -100px;
+      }
+    }
+  }
+}

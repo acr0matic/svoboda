@@ -10,7 +10,7 @@
 
       @media (hover: hover) {
         &:hover {
-          background-color: #f8f0ed;
+          background-color: #f8f0ed !important;
         }
       }
 
@@ -37,6 +37,15 @@
     &-next {
       &::after {
         background-image: url("../img/icons/control/slider__next.svg");
+      }
+    }
+  }
+
+  &-control {
+    &--transparent {
+      .swiper-button-prev,
+      .swiper-button-next {
+        background-color: transparent;
       }
     }
   }
