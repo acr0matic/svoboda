@@ -26,16 +26,4 @@
 .team {
   position: relative;
   z-index: 2;
-
-  &__slider {
-    .swiper-control {
-      .swiper-button-prev {
-        left: -100px;
-      }
-
-      .swiper-button-next {
-        right: -100px;
-      }
-    }
-  }
 }

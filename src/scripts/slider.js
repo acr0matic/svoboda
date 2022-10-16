@@ -26,5 +26,16 @@ function InitSlider() {
       prevEl: '.interior__slider .swiper-button-prev',
     },
   });
+
+  const feedback = new Swiper('.slider-feedback', {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    simulateTouch: false,
+
+    navigation: {
+      nextEl: '.feedback__slider .swiper-button-next',
+      prevEl: '.feedback__slider .swiper-button-prev',
+    },
+  });
 }
 
