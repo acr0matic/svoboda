@@ -34,7 +34,7 @@
 
     .nav__link {
       @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $font-size__text--big - 2px;
+        font-size: $font-size__text--big;
       }
 
       @include breakpoint($breakpoint-laptop) {
@@ -71,7 +71,7 @@
     }
 
     .nav__link {
-      @include breakpoint($breakpoint-laptop) {
+      @include breakpoint($breakpoint-laptop--medium) {
         font-size: $font-size__text--big;
       }
 

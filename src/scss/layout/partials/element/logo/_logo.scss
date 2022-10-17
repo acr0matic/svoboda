@@ -8,7 +8,7 @@
   }
 
   &--header {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop--medium) {
       width: 130px;
     }
 
@@ -19,27 +19,11 @@
     width: 180px;
   }
 
-  &--certificate {
-    @include breakpoint($breakpoint-laptop) {
-      width: 150px;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      width: 120px;
-    }
-
-    width: 180px;
-  }
-
   &--footer {
-    @include breakpoint($breakpoint-laptop) {
-      width: 120px;
-    }
-
     @include breakpoint($breakpoint-tablet--large) {
       width: 80px;
     }
 
-    width: 145px;
+    width: 150px;
   }
 }

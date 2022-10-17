@@ -9,6 +9,12 @@
 }
 
 .widget {
+  @include breakpoint($breakpoint-laptop--large) {
+    right: 20px;
+    bottom: 20px;
+    transform: scale(0.75);
+  }
+
   position: fixed;
   z-index: 100;
   right: 40px;

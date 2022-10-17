@@ -10,12 +10,8 @@
   color: $palette-white;
 
   a {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--big;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      font-size: $font-size__text--small;
     }
 
     color: $palette-white;
@@ -37,12 +33,8 @@
   }
 
   &__copyright {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--big;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      font-size: $font-size__text--small;
     }
 
     font-size: $font-size__title--small;
