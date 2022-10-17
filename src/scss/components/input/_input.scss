@@ -1,10 +1,18 @@
 .input {
+  &--small {
+    .input__field {
+      padding-bottom: 12px;
+      font-size: $font-size__text--big;
+    }
+  }
+
   &__field {
     width: 100%;
     padding-bottom: 20px;
 
     border: none;
     border-bottom: 1px solid #5a3600;
+    outline: none;
 
     background-color: transparent;
 

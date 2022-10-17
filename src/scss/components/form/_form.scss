@@ -14,5 +14,9 @@
 
     font-size: $font-size__text--regular;
     text-align: center;
+
+    a {
+      text-decoration: underline;
+    }
   }
 }
