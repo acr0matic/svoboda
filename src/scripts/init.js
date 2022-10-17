@@ -9,4 +9,17 @@ const lazyLoadInstance = new LazyLoad({
   },
 });
 
+
+MicroModal.init(modalParams);
+
+const tooltip = tippy('[data-tippy-content]', {
+  allowHTML: true,
+  maxWidth: 320,
+  placement: 'left',
+  theme: 'flat',
+});
+
+const forms = document.querySelectorAll('form');
+forms.forEach(form => new Form(form));
+
 InitSlider();

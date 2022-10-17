@@ -102,10 +102,10 @@ class Form {
     let isValid = true;
 
     const input_phone = this.form.querySelectorAll('input[type=tel]');
-    const input_name = this.form.querySelectorAll('input[name=user__name], input[name=user_child]')
+    const input_name = this.form.querySelectorAll('input[name=user_name]');
     const input_age = this.form.querySelectorAll('input[name=user_age]');
-    const input_email = this.form.querySelectorAll('input[name=user__email]');
-    const input_message = this.form.querySelectorAll('input[name=user_message]')
+    const input_email = this.form.querySelectorAll('input[name=user_email]');
+    const input_message = this.form.querySelectorAll('input[name=user_message]');
 
     const Validate = (field, type) => {
       if (!field.value.match(this.ValidateExpression[type])) {

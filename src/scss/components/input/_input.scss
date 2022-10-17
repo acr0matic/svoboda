@@ -1,8 +1,46 @@
+@keyframes field-error {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 .input {
+  position: relative;
+
   &--small {
     .input__field {
       padding-bottom: 12px;
       font-size: $font-size__text--big;
+    }
+  }
+
+  &--error {
+    animation: field-error 0.4s ease-in 0s 1;
+
+    .input__field {
+      border-color: #ca4747;
+    }
+
+    .input__warning {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -20,5 +58,23 @@
 
     font-weight: $weight-Light;
     font-family: FuturaPT, sans-serif;
+
+    transition: $transition ease;
+  }
+
+  &__warning {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 18px;
+    height: 18px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    cursor: help;
+
+    transition: 0.2s ease;
   }
 }
