@@ -55,11 +55,19 @@
         margin-top: 0;
       }
 
+      @include breakpoint($breakpoint-mobile--large) {
+        line-height: 1.75;
+      }
+
       margin-top: 5px;
 
       &--primary {
         @include breakpoint($breakpoint-tablet--large) {
           margin-bottom: 20px;
+        }
+
+        @include breakpoint($breakpoint-mobile--large) {
+          margin-bottom: 0;
         }
 
         margin-bottom: 30px;
@@ -76,7 +84,11 @@
       }
 
       @include breakpoint($breakpoint-tablet--large) {
-        font-size: $font-size__text--small;
+        font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--regular - 4px;
       }
 
       color: $color-text__white;

@@ -18,7 +18,7 @@ function InitSlider() {
 
   const interior = new Swiper('.slider-interior', {
     slidesPerView: 'auto',
-    spaceBetween: 60,
+    spaceBetween: 30,
     simulateTouch: false,
 
     navigation: {
@@ -27,6 +27,10 @@ function InitSlider() {
     },
 
     breakpoints: {
+      768: {
+        spaceBetween: 60,
+      },
+
       1200: {
         spaceBetween: 80,
       },
@@ -34,7 +38,7 @@ function InitSlider() {
   });
 
   const feedback = new Swiper('.slider-feedback', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 40,
     simulateTouch: false,
 
@@ -44,6 +48,14 @@ function InitSlider() {
     },
 
     breakpoints: {
+      540: {
+        slidesPerView: 2,
+      },
+
+      768: {
+        slidesPerView: 3,
+      },
+
       1200: {
         slidesPerView: 4,
       },

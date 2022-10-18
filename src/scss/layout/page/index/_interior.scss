@@ -1,4 +1,18 @@
 #interior {
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-bottom: 0;
+
+    .swiper-control {
+      display: none;
+    }
+  }
+
   overflow: hidden;
   padding-top: 40px;
+}
+
+.interior {
+  &__picture {
+    height: 100%;
+  }
 }

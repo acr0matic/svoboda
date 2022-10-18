@@ -14,6 +14,10 @@
       font-size: $font-size__text--big;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--regular;
+    }
+
     color: $palette-white;
     font-size: $font-size__title--small;
   }
@@ -22,11 +26,26 @@
   }
 
   &__company {
+    @include breakpoint($breakpoint-tablet--large) {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      justify-content: center;
+    }
   }
 
   &__logo {
     @include breakpoint($breakpoint-tablet--large) {
       margin-bottom: 45px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-right: 40px;
+      margin-bottom: 0;
     }
 
     margin-bottom: 90px;

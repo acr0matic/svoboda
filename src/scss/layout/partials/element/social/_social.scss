@@ -16,6 +16,10 @@
   }
 
   &--footer {
+    @include breakpoint($breakpoint-mobile--large) {
+      justify-content: center;
+    }
+
     .social__link {
       &:not(:last-child) {
         @include breakpoint($breakpoint-tablet--large) {
@@ -28,7 +32,7 @@
 
     .social__icon {
       @include breakpoint($breakpoint-tablet--large) {
-        width: 18px;
+        width: 24px;
       }
 
       width: 36px;

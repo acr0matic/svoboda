@@ -28,6 +28,12 @@
     height: 75vh;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    justify-content: flex-end;
+    height: 60vh;
+    max-height: 320px;
+  }
+
   position: relative;
   z-index: 2;
 
@@ -38,6 +44,10 @@
   height: 100vh;
 
   .section__header {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 40px;
+    }
+
     margin-bottom: 0;
   }
 
@@ -51,7 +61,13 @@
       line-height: 1.25;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 40px;
+    }
+
     font-size: 128px;
     line-height: 1;
+
+    text-align: left;
   }
 }

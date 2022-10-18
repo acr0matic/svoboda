@@ -54,12 +54,20 @@
           left: -75px;
         }
 
+        @include breakpoint($breakpoint-mobile--large) {
+          left: -60px;
+        }
+
         left: -100px;
       }
 
       .swiper-button-next {
         @include breakpoint($breakpoint-tablet--large) {
           right: -75px;
+        }
+
+        @include breakpoint($breakpoint-mobile--large) {
+          right: -60px;
         }
 
         right: -100px;

@@ -1,4 +1,8 @@
 #feedback {
+  @include breakpoint($breakpoint-mobile--large) {
+    margin-top: 40px;
+  }
+
   position: relative;
   margin-top: 80px;
   padding-top: 20px;
@@ -30,11 +34,7 @@
 
   &::after {
     bottom: 0;
-    background-image: linear-gradient(
-      0deg,
-      #e4e0db 0%,
-      rgba(#d9d9d9, 0) 100%
-    );
+    background-image: linear-gradient(0deg, #e4e0db 0%, rgba(#d9d9d9, 0) 100%);
   }
 }
 
@@ -42,6 +42,10 @@
   &__slider {
     @include breakpoint($breakpoint-laptop--large) {
       width: 85%;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 55%;
     }
 
     margin: 0 auto;
