@@ -24,6 +24,10 @@
 }
 
 .hero {
+  @include breakpoint($breakpoint-tablet--large) {
+    height: 75vh;
+  }
+
   position: relative;
   z-index: 2;
 
@@ -40,6 +44,11 @@
   .section__title {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: 92px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: 54px;
+      line-height: 1.25;
     }
 
     font-size: 128px;

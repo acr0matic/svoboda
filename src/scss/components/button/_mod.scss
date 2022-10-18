@@ -24,6 +24,13 @@
     }
 
     &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 45px;
+        height: 15px;
+
+        margin-left: 20px;
+      }
+
       content: "";
       width: 85px;
       height: 35px;
@@ -32,6 +39,7 @@
 
       background-image: url("../img/icons/control/button__arrow.svg");
       background-position: center center;
+      background-size: contain;
       background-repeat: no-repeat;
 
       transition: $transition ease;

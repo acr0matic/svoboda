@@ -31,6 +31,14 @@
     }
   }
 
+  @include breakpoint($breakpoint-laptop) {
+    padding: 60px 0 80px;
+  }
+
+  @include breakpoint($breakpoint-tablet--large) {
+    padding: 30px 0 40px;
+  }
+
   position: relative;
   padding: 100px 0 120px;
 
@@ -60,6 +68,10 @@
 
   &__title,
   &__description {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 15px;
+    }
+
     margin-bottom: 50px;
   }
 }

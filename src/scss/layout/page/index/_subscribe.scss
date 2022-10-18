@@ -1,5 +1,11 @@
 #subscribe {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  @include breakpoint($breakpoint-tablet--large) {
+    .section__title {
+      br {
+        display: none;
+      }
+    }
+  }
+
   background-color: $palette-white;
 }

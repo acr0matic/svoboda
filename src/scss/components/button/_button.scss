@@ -6,8 +6,12 @@
   }
 
   @include breakpoint($breakpoint-tablet--large) {
+    min-width: 160px;
+
     padding: 12px 25px;
-    font-size: $font-size__text--small;
+    border-width: 1px !important;
+
+    font-size: $font-size__text--regular - 4px;
   }
 
   min-width: 270px;

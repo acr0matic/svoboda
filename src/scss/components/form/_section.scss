@@ -1,3 +1,8 @@
 .form-section {
+  @include breakpoint($breakpoint-tablet--large) {
+    width: 480px;
+    margin-top: 45px;
+  }
+
   width: 680px;
 }

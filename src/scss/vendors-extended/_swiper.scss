@@ -2,6 +2,11 @@
   &-button {
     &-prev,
     &-next {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 54px;
+        height: 54px;
+      }
+
       width: 72px;
       height: 72px;
       background-color: rgba($color: #f8f0ed, $alpha: 0.7);
@@ -20,6 +25,7 @@
         height: 100%;
 
         background-position: center center;
+        background-size: 60%;
         background-repeat: no-repeat;
       }
 
@@ -44,10 +50,18 @@
   &-control {
     &--outside {
       .swiper-button-prev {
+        @include breakpoint($breakpoint-tablet--large) {
+          left: -75px;
+        }
+
         left: -100px;
       }
 
       .swiper-button-next {
+        @include breakpoint($breakpoint-tablet--large) {
+          right: -75px;
+        }
+
         right: -100px;
       }
     }

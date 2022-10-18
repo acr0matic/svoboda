@@ -11,11 +11,23 @@
 
     li {
       &:not(:last-child) {
+        @include breakpoint($breakpoint-laptop) {
+          margin-bottom: 15px;
+        }
+
         margin-bottom: 20px;
       }
     }
 
     img {
+      @include breakpoint($breakpoint-laptop) {
+        margin-top: 0;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 24px;
+      }
+
       margin-top: 6px;
       margin-right: 16px;
     }
@@ -24,6 +36,14 @@
   &__map {
     @include breakpoint($breakpoint-laptop--medium) {
       height: 420px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 360px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 270px;
     }
 
     height: 530px;

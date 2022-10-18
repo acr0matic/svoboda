@@ -18,23 +18,35 @@ function InitSlider() {
 
   const interior = new Swiper('.slider-interior', {
     slidesPerView: 'auto',
-    spaceBetween: 80,
+    spaceBetween: 60,
     simulateTouch: false,
 
     navigation: {
       nextEl: '.interior__slider .swiper-button-next',
       prevEl: '.interior__slider .swiper-button-prev',
     },
+
+    breakpoints: {
+      1200: {
+        spaceBetween: 80,
+      },
+    },
   });
 
   const feedback = new Swiper('.slider-feedback', {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 40,
     simulateTouch: false,
 
     navigation: {
       nextEl: '.feedback__slider .swiper-button-next',
       prevEl: '.feedback__slider .swiper-button-prev',
+    },
+
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+      },
     },
   });
 }
