@@ -22,7 +22,7 @@
 
         <div class="about__footer">
           <div class="about__price"><span>2000</span> ₽</div>
-          <button data-micromodal-trigger="modal-callback" class="button button-outline button--arrow">Записаться</button>
+          <button data-subject="Эстетическая и аппаратная косметология" data-micromodal-trigger="modal-callback" class="button button-outline button--arrow">Записаться</button>
         </div>
         <!-- /.about__footer -->
       </div>

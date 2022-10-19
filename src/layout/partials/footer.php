@@ -173,6 +173,7 @@
 <script src="scripts/slider.js"></script>
 <script src="scripts/init.js"></script>
 <script src="scripts/header.js"></script>
+<script src="scripts/modal.js"></script>
 <!-- endbuild -->
 </body>
 

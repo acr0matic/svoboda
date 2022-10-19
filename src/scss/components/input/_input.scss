@@ -26,6 +26,10 @@
 
   &--small {
     .input__field {
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular;
+      }
+
       padding-bottom: 12px;
       font-size: $font-size__text--big;
     }

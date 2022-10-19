@@ -176,7 +176,7 @@ class Form {
       if (response.ok) {
         if (this.redirect) window.location.href = this.redirect;
 
-        MicroModal.close('modal-callback', modalParams);
+        MicroModal.close(currentModal, modalParams);
         MicroModal.show('modal-success', modalParams);
 
         setTimeout(() => {

@@ -14,6 +14,8 @@ const scrollParams = {
   header: '#header',
 }
 
+let currentModal = null;
+
 if (isTablet) scrollParams.offset = -30;
 if (isMobile) scrollParams.offset = -15;
 

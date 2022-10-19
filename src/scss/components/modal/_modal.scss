@@ -2,6 +2,10 @@ $transition-time: 0.2s;
 
 .modal {
   &__overlay {
+    @include breakpoint($breakpoint-tablet) {
+      align-items: flex-end;
+    }
+
     position: fixed;
     z-index: $z-index-modal;
     top: 0;
@@ -17,6 +21,15 @@ $transition-time: 0.2s;
   }
 
   &__container {
+    @include breakpoint($breakpoint-tablet--large) {
+      max-width: 640px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 95%;
+      padding-bottom: 40px;
+    }
+
     position: relative;
 
     width: 100%;
@@ -33,11 +46,28 @@ $transition-time: 0.2s;
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__title--small;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__title--small - 4px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--big;
+    }
+
     font-size: $font-size__title--medium;
     text-align: center;
   }
 
   &__close {
+    @include breakpoint($breakpoint-tablet) {
+      width: 18px;
+      height: 18px;
+    }
+
     position: absolute;
     z-index: 3;
     top: 25px;
@@ -69,14 +99,27 @@ $transition-time: 0.2s;
   }
 
   &__text {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular - 4px;
+    }
+
+    padding: 0 30px;
     font-size: $font-size__text--regular;
     text-align: center;
   }
 
   &__form {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 30px;
+    }
+
     margin-top: 60px;
 
     .form__wrapper {
+      @include breakpoint($breakpoint-tablet) {
+        width: 90%;
+      }
+
       width: 75%;
       text-align: center;
     }
