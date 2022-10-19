@@ -61,5 +61,26 @@ function InitSlider() {
       },
     },
   });
+
+  const portfolio = new Swiper('.slider-portfolio', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    simulateTouch: false,
+
+    navigation: {
+      nextEl: '.portfolio__slider .swiper-button-next',
+      prevEl: '.portfolio__slider .swiper-button-prev',
+    },
+
+    breakpoints: {
+      540: {
+        slidesPerView: 2,
+      },
+
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
 }
 

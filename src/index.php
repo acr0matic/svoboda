@@ -1,7 +1,7 @@
 <?php include_once('layout/partials/header.php') ?>
 
 <!-- Основной контент -->
-<main>
+<main id="home">
   <section style="background-image: url('img/layout/page/index/hero/background.jpg');" id="hero" class="section">
     <div class="container">
       <div class="hero">
@@ -31,7 +31,7 @@
             </div>
             <!-- /.section__header -->
 
-            <div class="about__content" data-editor="defalut">
+            <div class="about__content" data-editor="default">
               <p>
                 SALON SVOBODA - уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных
                 и стильных образов с учетом последних тенденций
@@ -157,101 +157,7 @@
     <!-- /.container -->
   </section>
 
-  <section id="service" class="section">
-    <div class="container">
-      <div class="section__header text-center">
-        <h2 class="section__title">
-          Услуги
-        </h2>
-      </div>
-      <!-- /.section__header -->
-    </div>
-    <!-- /.container -->
-
-    <div class="service">
-      <div class="service__grid">
-        <div class="service-item" style="background-image: url('img/layout/section/service/1.jpg');">
-          <div class="container container--wide">
-            <div class="service-item__content">
-              <h3 class="service-item__title">
-                Эндосфера и программы
-                <br>
-                ухода по телу
-              </h3>
-
-              <p class="service-item__description">
-                Здесь будет краткое описание
-                <br>
-                раздела. Здесь будет краткое
-                <br>
-                описание раздела
-              </p>
-              <!-- /.service-item__description -->
-
-              <button class="service-item__button button button--arrow button--white button-outline">Подробнее</button>
-            </div>
-            <!-- /.service-item__content -->
-          </div>
-          <!-- /.container container--wide -->
-        </div>
-        <!-- /.service-item -->
-
-        <div class="service-item" style="background-image: url('img/layout/section/service/2.jpg');">
-          <div class="container container--wide">
-            <div class="service-item__content">
-              <h3 class="service-item__title">
-                Эстетическая и аппаратная
-                <br>
-                косметология
-              </h3>
-
-              <p class="service-item__description">
-                Здесь будет краткое описание
-                <br>
-                раздела. Здесь будет краткое
-                <br>
-                описание раздела
-              </p>
-              <!-- /.service-item__description -->
-
-              <button class="service-item__button button button--arrow button--white button-outline">Подробнее</button>
-            </div>
-            <!-- /.service-item__content -->
-          </div>
-          <!-- /.container container--wide -->
-        </div>
-        <!-- /.service-item -->
-
-        <div class="service-item" style="background-image: url('img/layout/section/service/3.jpg');">
-          <div class="container container--wide">
-            <div class="service-item__content">
-              <h3 class="service-item__title">
-                Маникюр и педикюр
-              </h3>
-
-              <p class="service-item__description">
-                Здесь будет краткое описание
-                <br>
-                раздела. Здесь будет краткое
-                <br>
-                описание раздела
-              </p>
-              <!-- /.service-item__description -->
-
-              <button class="service-item__button button button--arrow button--white button-outline">Подробнее</button>
-            </div>
-            <!-- /.service-item__content -->
-          </div>
-          <!-- /.container container--wide -->
-        </div>
-        <!-- /.service-item -->
-      </div>
-      <!-- /.service__grid -->
-
-      <button class="service__button button button--arrow button-outline mx-auto">Смотреть все</button>
-    </div>
-    <!-- /.service -->
-  </section>
+  <?php include_once('layout/blocks/service.php') ?>
 
   <section id="callback" class="section">
     <div class="container">
@@ -514,63 +420,8 @@
     <!-- /.container -->
   </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact">
-        <div class="row">
-          <div class="col-12 col-md-5 mb-5">
-            <div class="section__header">
-              <h2 class="section__title">
-                Контакты
-              </h2>
-            </div>
-            <!-- /.section__header -->
+  <?php include_once('layout/blocks/contact.php') ?>
 
-            <ul class="contact__list">
-              <li>
-                <a class="link" href="tel:+79999999999">
-                  <img src="img/icons/phone.svg" alt="">
-                  +7(999) 999 99 99
-                </a>
-              </li>
-
-              <li>
-                <a class="link" href="">
-                  <img src="img/icons/geo.svg" alt="">
-                  г. Нижний Новгород, ул. Свободы
-                </a>
-              </li>
-
-              <li>
-                <a class="link" href="mailto:example@mail.ru">
-                  <img src="img/icons/mail.svg" alt="">
-                  example@mail.ru
-                </a>
-              </li>
-
-              <li>
-                <img src="img/icons/clock.svg" alt="">
-                Работаем для вас <br> ежедневно 10:00-20:00
-              </li>
-            </ul>
-            <!-- /.contact__list -->
-          </div>
-          <!-- /.col-5 -->
-
-          <div class="col-12 col-md-7 ps-md-4">
-            <div class="contact__map lazy">
-              <iframe class="map lazy__item" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ee8c0203e8011213a31527b420f11402ed2094b98b1d44e5451baad578b10f3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-            </div>
-            <!-- /.contact__map -->
-          </div>
-          <!-- /.col-7 ps-4 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.contact -->
-    </div>
-    <!-- /.container -->
-  </section>
 </main>
 
 <?php include_once('layout/partials/footer.php') ?>

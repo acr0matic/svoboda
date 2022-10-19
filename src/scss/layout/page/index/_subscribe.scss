@@ -1,5 +1,7 @@
 #subscribe {
   @include breakpoint($breakpoint-tablet--large) {
+    padding-bottom: 60px;
+
     .section__title {
       br {
         display: none;
@@ -7,5 +9,6 @@
     }
   }
 
+  padding-bottom: 80px;
   background-color: $palette-white;
 }

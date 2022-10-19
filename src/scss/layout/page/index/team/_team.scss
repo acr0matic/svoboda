@@ -1,5 +1,13 @@
 #team {
+  @include breakpoint($breakpoint-laptop) {
+    margin-top: 60px;
+  }
+
   position: relative;
+  overflow: hidden;
+
+  margin-top: 100px;
+  padding-bottom: 60px;
 
   &::after {
     @include breakpoint($breakpoint-laptop--large) {

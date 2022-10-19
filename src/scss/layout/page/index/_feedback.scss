@@ -1,5 +1,5 @@
 #feedback {
-  @include breakpoint($breakpoint-mobile--large) {
+  @include breakpoint($breakpoint-tablet--large) {
     margin-top: 40px;
   }
 

@@ -31,7 +31,7 @@
             <div class="handorgel__content__inner">
               <div class="row">
                 <div class="col-12 col-md-8">
-                  <div data-editor="defalut" class="service-list__content">
+                  <div data-editor="default" class="service-list__content">
                     <p>
                       Описание услуги уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных и стильных образов с учетом последних тенденций и индивидуальных особенностей каждого клиента.
                     </p>
@@ -73,7 +73,7 @@
             <div class="handorgel__content__inner">
               <div class="row">
                 <div class="col-12 col-md-8">
-                  <div data-editor="defalut" class="service-list__content">
+                  <div data-editor="default" class="service-list__content">
                     <p>
                       Описание услуги уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных и стильных образов с учетом последних тенденций и индивидуальных особенностей каждого клиента.
                     </p>
@@ -115,7 +115,7 @@
             <div class="handorgel__content__inner">
               <div class="row">
                 <div class="col-12 col-md-8">
-                  <div data-editor="defalut" class="service-list__content">
+                  <div data-editor="default" class="service-list__content">
                     <p>
                       Описание услуги уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных и стильных образов с учетом последних тенденций и индивидуальных особенностей каждого клиента.
                     </p>
@@ -172,7 +172,7 @@
             <div class="handorgel__content__inner">
               <div class="row">
                 <div class="col-12 col-md-8">
-                  <div data-editor="defalut" class="service-list__content">
+                  <div data-editor="default" class="service-list__content">
                     <p>
                       Описание услуги уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных и стильных образов с учетом последних тенденций и индивидуальных особенностей каждого клиента.
                     </p>
@@ -214,7 +214,7 @@
             <div class="handorgel__content__inner">
               <div class="row">
                 <div class="col-12 col-md-8">
-                  <div data-editor="defalut" class="service-list__content">
+                  <div data-editor="default" class="service-list__content">
                     <p>
                       Описание услуги уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных и стильных образов с учетом последних тенденций и индивидуальных особенностей каждого клиента.
                     </p>
@@ -256,7 +256,7 @@
             <div class="handorgel__content__inner">
               <div class="row">
                 <div class="col-12 col-md-8">
-                  <div data-editor="defalut" class="service-list__content">
+                  <div data-editor="default" class="service-list__content">
                     <p>
                       Описание услуги уникальное пространство красоты, в котором слились в одно целое высококачественный сервис и искусство создания истинно элегантных и стильных образов с учетом последних тенденций и индивидуальных особенностей каждого клиента.
                     </p>

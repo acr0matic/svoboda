@@ -1,4 +1,4 @@
-#about {
+main#home #about {
   @include breakpoint($breakpoint-laptop--medium) {
     background-position-x: center;
     background-size: 650px;

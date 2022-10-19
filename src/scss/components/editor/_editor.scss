@@ -1,4 +1,4 @@
-[data-editor="defalut"] {
+[data-editor="default"] {
   p {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--big;
