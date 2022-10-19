@@ -1,0 +1,54 @@
+main#service #service-list {
+  @include breakpoint($breakpoint-tablet--large) {
+    padding-bottom: 80px;
+  }
+
+  @include even {
+    background-image: url("../img/layout/page/service/list/background.jpg");
+  }
+
+  padding-bottom: 120px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .section__title {
+    text-align: left;
+  }
+}
+
+.service-list {
+  &__accordion {
+    &:not(:last-child) {
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 20px;
+      }
+
+      margin-bottom: 35px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+
+    margin-top: 50px;
+  }
+
+  &__price {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__title--small - 4px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-right: 30px;
+      font-size: $font-size__title--small - 8px;
+    }
+
+    margin-right: 50px;
+    margin-left: auto;
+
+    font-size: $font-size__title--small;
+    font-family: ViaodaLibre, serif;
+  }
+}

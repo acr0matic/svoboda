@@ -1,0 +1,61 @@
+.handorgel {
+  border: none;
+
+  &__header {
+    &__button {
+      @include breakpoint($breakpoint-tablet--large) {
+        border-width: 1px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 16px 0;
+      border: none;
+      border-bottom: 2px solid #5a3600;
+
+      background-color: transparent !important;
+    }
+
+    &__text {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__title--small - 4px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__title--small - 8px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular - 2px;
+      }
+
+      font-size: $font-size__text--large;
+    }
+
+    &--open {
+      .handorgel__indicator {
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  &__indicator {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 18px;
+    }
+
+    transition: $transition ease;
+  }
+
+  &__content {
+    border: none;
+    background-color: transparent;
+
+    &__inner {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

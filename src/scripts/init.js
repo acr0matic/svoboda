@@ -23,4 +23,7 @@ forms.forEach(form => new Form(form));
 
 const scrollController = new SmoothScroll('a[href*="#"]', scrollParams);
 
+const accordion = document.querySelectorAll('.handorgel')
+accordion.forEach(item => new handorgel(item));
+
 InitSlider();

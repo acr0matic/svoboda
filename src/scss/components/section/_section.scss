@@ -1,12 +1,22 @@
 .section {
-  &:not(:first-child) {
+  @include breakpoint($breakpoint-tablet--large) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &:first-child {
     @include breakpoint($breakpoint-tablet--large) {
-      padding-top: 60px;
-      padding-bottom: 40px;
+      padding-top: 140px;
     }
 
-    padding-top: 100px;
-    padding-bottom: 80px;
+    @include breakpoint($breakpoint-tablet) {
+      padding-top: 120px;
+    }
+
+    padding-top: 200px;
   }
 
   &__header {
