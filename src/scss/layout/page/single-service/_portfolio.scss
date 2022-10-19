@@ -1,0 +1,16 @@
+#portfolio {
+}
+
+.portfolio {
+  padding-bottom: 60px;
+
+  &__picture {
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
