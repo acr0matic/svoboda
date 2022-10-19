@@ -1,58 +1,68 @@
 .mobile-menu {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  z-index: 1000;
+  top: var(--height);
   left: 0;
-  z-index: 40;
 
+  width: 100%;
   height: 100vh;
 
   visibility: hidden;
 
   &__overlay {
+    display: none;
     width: 100%;
     height: 100%;
 
-    visibility: hidden;
-    background-color: rgba($color: #000, $alpha: 50%);
+    background-color: rgba($color: #000000, $alpha: 0.7);
     opacity: 0;
+    visibility: hidden;
 
     transition: 0.3s ease;
   }
 
   &__wrapper {
     position: absolute;
-    top: -100%;
+    top: 0;
     left: 0;
 
     width: 100%;
-    height: 100%;
-    max-height: 530px;
+    height: 100vh;
 
-    padding: 100px 30px 40px;
+    padding: 60px 30px;
 
-    overflow: auto;
-    background-color: #fff;
+    background-color: $palette-white--pale;
+    background-image: url("../img/common/background-logo.svg");
+    background-position-x: right;
+    background-position-y: 60%;
+    background-size: 400px;
+    background-repeat: no-repeat;
 
-    transition: 0.5s ease-out;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.2s ease;
   }
 
-  &__button {
-    display: block;
-    margin: 30px auto 0;
+  &__content {
+    width: 100%;
+  }
+
+  &__nav {
+    margin-bottom: 75px;
   }
 
   &--open {
     visibility: visible;
 
     .mobile-menu__overlay {
-      visibility: visible;
       opacity: 1;
+      visibility: visible;
     }
 
     .mobile-menu__wrapper {
-      top: 0;
+      opacity: 1;
+      visibility: visible;
     }
   }
 }

@@ -125,7 +125,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mt-5 mt-md-0">
+            <div class="col-12 col-md-4 mt-5">
               <a class="link" href="">Публичная оферта</a>
             </div>
             <!-- /.col-4 -->

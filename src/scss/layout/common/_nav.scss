@@ -7,6 +7,9 @@
   }
 
   &__item {
+    &--current {
+      font-weight: $weight-Medium;
+    }
   }
 
   &__link {
@@ -45,6 +48,18 @@
         font-size: $font-size__text--regular - 4px;
       }
 
+      font-size: $font-size__text--big;
+    }
+  }
+
+  &--mobile {
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .nav__link {
       font-size: $font-size__text--big;
     }
   }

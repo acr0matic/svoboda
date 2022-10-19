@@ -19,7 +19,7 @@
     <!-- /.container -->
   </section>
 
-  <section id="about" class="section" style="background-image: url('img/layout/page/index/about/background.svg');">
+  <section id="about" class="section" style="background-image: url('img/common/background-logo.svg');">
     <div class="container">
       <div class="about">
         <div class="row">
