@@ -9,7 +9,6 @@ const lazyLoadInstance = new LazyLoad({
   },
 });
 
-
 MicroModal.init(modalParams);
 
 const tooltip = tippy('[data-tippy-content]', {
@@ -21,5 +20,7 @@ const tooltip = tippy('[data-tippy-content]', {
 
 const forms = document.querySelectorAll('form');
 forms.forEach(form => new Form(form));
+
+const scrollController = new SmoothScroll('a[href*="#"]', scrollParams);
 
 InitSlider();

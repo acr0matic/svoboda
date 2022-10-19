@@ -6,7 +6,7 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: $z-index-header;
   top: 0;
   left: 0;
@@ -16,12 +16,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  transition: $transition ease;
+
   &--hidden {
     top: -100%;
   }
 
-  &--sticky {
-    position: fixed;
+  &--background {
     background-color: $palette-white--pale;
     box-shadow: 0 3px 1px rgba(#000000, 0.028), 0 1px 4px rgba(#000000, 0.042);
   }

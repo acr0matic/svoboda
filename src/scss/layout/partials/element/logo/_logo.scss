@@ -16,6 +16,10 @@
       width: 90px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 120px;
+    }
+
     width: 180px;
   }
 

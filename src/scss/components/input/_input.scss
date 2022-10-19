@@ -45,6 +45,10 @@
   }
 
   &__field {
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-bottom: 10px;
+    }
+
     width: 100%;
     padding-bottom: 20px;
 
@@ -63,6 +67,16 @@
   }
 
   &__warning {
+    @include breakpoint($breakpoint-laptop) {
+      top: 10px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      top: 5px;
+      width: 12px;
+      height: 12px;
+    }
+
     position: absolute;
     top: 15px;
     right: 15px;
