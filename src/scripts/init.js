@@ -13,7 +13,7 @@ MicroModal.init(modalParams);
 
 const tooltip = tippy('[data-tippy-content]', {
   allowHTML: true,
-  maxWidth: 320,
+  maxWidth: 270,
   placement: 'left',
   theme: 'flat',
 });

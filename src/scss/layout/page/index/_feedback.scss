@@ -39,6 +39,9 @@
 }
 
 .feedback {
+  position: relative;
+  z-index: 5;
+
   &__slider {
     @include breakpoint($breakpoint-laptop--large) {
       width: 85%;

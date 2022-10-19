@@ -1,11 +1,10 @@
 .button-outline {
   border: 2px solid #5a3600;
 
-  @media (hover: hover) {
-    &:hover {
-      border-color: #b09e83;
-      background-color: #b09e83;
-      color: $color-text__white;
-    }
+  &:hover,
+  &:active {
+    border-color: #b09e83;
+    background-color: #b09e83;
+    color: $color-text__white;
   }
 }

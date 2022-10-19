@@ -3,6 +3,11 @@
 
 .contact {
   &__list {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     li,
     a {
       display: flex;
@@ -10,8 +15,25 @@
     }
 
     li {
+      @include breakpoint($breakpoint-tablet) {
+        width: 50%;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 100%;
+        font-size: $font-size__text--regular - 2px;
+      }
+
       &:not(:last-child) {
         @include breakpoint($breakpoint-laptop) {
+          margin-bottom: 15px;
+        }
+
+        @include breakpoint($breakpoint-tablet) {
+          margin-bottom: 20px;
+        }
+
+        @include breakpoint($breakpoint-mobile--large) {
           margin-bottom: 15px;
         }
 

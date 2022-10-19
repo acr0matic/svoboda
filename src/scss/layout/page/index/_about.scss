@@ -5,6 +5,7 @@
   }
 
   @include breakpoint($breakpoint-tablet--large) {
+    padding-top: 60px;
     background-size: 600px;
   }
 

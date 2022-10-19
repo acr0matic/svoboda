@@ -2,12 +2,11 @@
   background-color: #c3a38b;
   color: $color-text__white;
 
-  @media (hover: hover) {
-    &:hover {
-      border-color: #5a3600;
-      background-color: transparent;
+  &:hover,
+  &:active {
+    border-color: #5a3600;
+    background-color: transparent;
 
-      color: $color-text__brown;
-    }
+    color: $color-text__brown;
   }
 }
