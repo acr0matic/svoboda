@@ -19,3 +19,12 @@ let currentModal = null;
 if (isTablet) scrollParams.offset = -30;
 if (isMobile) scrollParams.offset = -15;
 
+const StyleСlass = {
+  'header': {
+    'background': 'header--background',
+  },
+
+  'mobile': {
+    'open': 'mobile-menu--open',
+  },
+}

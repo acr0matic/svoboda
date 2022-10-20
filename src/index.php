@@ -129,7 +129,7 @@
       </div>
       <!-- /.section__header -->
 
-      <form action="" data-target="callback" data-subject="Подписка" class="form form-section">
+      <form action="php/test.php" data-target="callback" data-subject="Подписка" class="form form-section">
         <div class="input mb-4">
           <input placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field">
           <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -170,7 +170,7 @@
       </div>
       <!-- /.section__header -->
 
-      <form action="" data-target="callback" data-subject="Обратная связь" class="form form-section">
+      <form action="php/test.php" data-target="callback" data-subject="Обратная связь" class="form form-section">
         <div class="input mb-4">
           <input placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field">
           <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">

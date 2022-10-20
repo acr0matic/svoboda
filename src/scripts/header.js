@@ -1,7 +1,7 @@
 const header = document.getElementById('header');
 
 if (header) {
-  const page = document.body.id;
+  const page = document.querySelector('main').id;
 
   let isReach = false;
   let isOpen = false;
@@ -18,9 +18,13 @@ if (header) {
     window.addEventListener('scroll', () => {
       isReach = window.scrollY > 0;
 
-      if (isReach || isOpen) header.classList.add('header--background');
-      else header.classList.remove('header--background');
+      if (isReach || isOpen) header.classList.add(StyleСlass.header.background);
+      else header.classList.remove(StyleСlass.header.background);
     });
+  }
+
+  else {
+    header.classList.add(StyleСlass.header.background);
   }
 
   const mobile = document.querySelector('#mobile-menu');
@@ -36,9 +40,9 @@ if (header) {
   function Menu() {
     isOpen = !isOpen;
 
-    if (!isReach) header.classList.toggle('header--background');
+    if (!isReach) header.classList.toggle(StyleСlass.header.background);
 
-    mobile.classList.toggle('mobile-menu--open');
+    mobile.classList.toggle(StyleСlass.mobile.open);
     burger.classList.toggle('is-active')
   }
 }

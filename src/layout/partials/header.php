@@ -61,6 +61,8 @@
 </head>
 
 <body id="home">
+  <div id="page-loader" class="page-loader"></div>
+
   <!-- Шапка -->
   <header id="header" class="header">
     <div class="container">
