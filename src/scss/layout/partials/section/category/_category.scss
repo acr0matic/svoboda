@@ -1,8 +1,4 @@
-#service {
-  padding-top: 60px;
-}
-
-.service {
+.category {
   &__button {
     @include breakpoint($breakpoint-tablet--large) {
       margin-top: 30px;

@@ -157,7 +157,7 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('layout/blocks/service.php') ?>
+  <?php include_once('layout/blocks/category.php') ?>
 
   <section id="callback" class="section">
     <div class="container">

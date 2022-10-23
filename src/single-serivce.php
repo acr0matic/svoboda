@@ -103,7 +103,7 @@
 
   <?php include_once('layout/blocks/contact.php') ?>
 
-  <?php include_once('layout/blocks/service.php') ?>
+  <?php include_once('layout/blocks/category.php') ?>
 </main>
 
 <?php include_once('layout/partials/footer.php') ?>

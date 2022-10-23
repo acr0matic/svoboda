@@ -1,6 +1,6 @@
-.service-item {
+.category-item {
   @include odd {
-    .service-item__content {
+    .category-item__content {
       align-items: flex-end;
       text-align: right;
     }
@@ -16,7 +16,7 @@
   }
 
   @include even {
-    .service-item__content {
+    .category-item__content {
       align-items: flex-start;
       text-align: left;
     }
