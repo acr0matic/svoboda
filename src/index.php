@@ -46,7 +46,7 @@
           </div>
           <!-- /.col-5 -->
 
-          <div class="col-12 col-md-6 offset-md-1 ps-md-0">
+          <div class="col-12 col-md-6 offset-md-1 ps-md-0 pt-md-3">
             <div class="text-center text-md-end">
               <picture class="about__picture">
                 <img src="img/layout/page/index/about/label.svg" alt="">

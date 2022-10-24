@@ -5,7 +5,7 @@
       <div class="mobile-menu__nav">
         <nav class="nav nav--mobile">
           <ul class="nav__list">
-            <li class="nav__item nav__item--current">
+            <li class="nav__item">
               <a href="#service" class="nav__link">Услуги</a>
             </li>
 

@@ -89,7 +89,7 @@
     </div>
     <!-- /.category__grid -->
 
-    <button class="category__button button button--arrow button-outline mx-auto">Смотреть все</button>
+    <button data-handler="ajax" data-target="service" data-paged="" data-max-pages="" class="button button--arrow button-outline mx-auto category__button">Загрузить еще</button>
   </div>
   <!-- /.category -->
 </section>

@@ -1,4 +1,4 @@
-main#service #service-list {
+main#service section {
   @include breakpoint($breakpoint-tablet--large) {
     padding-bottom: 80px;
   }

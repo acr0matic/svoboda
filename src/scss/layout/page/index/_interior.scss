@@ -13,6 +13,29 @@
 
 .interior {
   &__picture {
-    height: 100%;
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 450px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 370px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 270px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 180px;
+    }
+
+    height: 540px;
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 }

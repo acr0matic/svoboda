@@ -100,7 +100,7 @@
 
         <div class="header__action">
           <button class="button button-outline d-none d-md-block">Купить сертификат</button>
-          <button class="hamburger hamburger--squeeze d-block d-md-none" type="button">
+          <button class="hamburger hamburger--squeeze d-flex d-md-none" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
