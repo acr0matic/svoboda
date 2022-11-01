@@ -20,7 +20,7 @@
     }
 
     color: $palette-white;
-    font-size: $font-size__title--small;
+    font-size: $font-size__title--small - 2px;
   }
 
   &__wrapper {
@@ -40,8 +40,8 @@
   }
 
   &__logo {
-    @include breakpoint($breakpoint-tablet--large) {
-      margin-bottom: 45px;
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 50px;
     }
 
     @include breakpoint($breakpoint-tablet--large) {
@@ -49,7 +49,7 @@
       margin-bottom: 0;
     }
 
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 
   &__copyright {
@@ -68,7 +68,15 @@
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    a {
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular;
+      }
+
+      font-size: $font-size__text--big;
+    }
   }
 
   &__social {

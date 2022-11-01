@@ -79,7 +79,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-sm-6 col-md-4 ps-lg-4 mt-5 mt-sm-0">
+            <div class="col-12 col-sm-6 col-md-4 ps-lg-4 mt-3 mt-sm-0">
               <nav class="nav nav--footer">
                 <ul class="nav__list">
                   <li class="nav__item nav__item--primary">
@@ -117,7 +117,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-8 mt-2 mt-md-5">
+            <div class="col-12 col-md-8 mt-4 mt-md-5">
               <a class="link" href="">Политика конфиденциальности</a>
             </div>
             <!-- /.col-8 -->

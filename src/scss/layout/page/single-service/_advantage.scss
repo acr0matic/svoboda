@@ -1,0 +1,23 @@
+#advantage {
+  padding-bottom: 75px;
+}
+
+.advantage {
+  &__item {
+
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-weight: $weight-Light;
+    font-size: $font-size__text--big;
+    font-family: FuturaPT, sans-serif;
+
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+#principle {
+  padding-bottom: 75px;
+  background-color: $palette-white;
+}
+
+.principle {
+  .column {
+    width: 30%;
+  }
+
+  &__item {
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: $font-size__text--big;
+  }
+}

@@ -1,40 +1,28 @@
 main#single-service {
+  .section__header {
+    margin-bottom: 90px;
+  }
+
   #about {
     padding-bottom: 60px;
   }
 
   .about {
-    &__footer {
-      @include breakpoint($breakpoint-tablet) {
-        justify-content: space-between;
-        margin-top: 45px;
-      }
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
-      display: flex;
-      align-items: center;
-
-      margin-top: 80px;
+    &__content {
+      margin-right: 120px;
     }
 
-    &__price {
-      @include breakpoint($breakpoint-laptop) {
-        font-size: $font-size__title--small - 4px;
-      }
+    &__picture {
+      flex-shrink: 0;
 
-      @include breakpoint($breakpoint-tablet--large) {
-        margin-right: 30px;
-        font-size: $font-size__title--small - 8px;
-      }
+      width: 600px;
+      height: 750px;
 
-      @include breakpoint($breakpoint-tablet) {
-        margin-left: 0;
-      }
-
-      margin-right: 50px;
-      margin-left: auto;
-
-      font-size: $font-size__title--small;
-      font-family: ViaodaLibre, serif;
+      margin-bottom: 0;
     }
   }
 }
