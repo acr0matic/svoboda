@@ -1,10 +1,22 @@
 #principle {
+  @include breakpoint($breakpoint-tablet) {
+    padding-bottom: 40px;
+  }
+
   padding-bottom: 75px;
   background-color: $palette-white;
 }
 
 .principle {
   .column {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 50%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+    }
+
     width: 30%;
   }
 
@@ -12,10 +24,23 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
     margin-bottom: 30px;
   }
 
   &__text {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular - 4px;
+    }
+
     font-size: $font-size__text--big;
   }
 }

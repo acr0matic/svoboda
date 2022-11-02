@@ -1,22 +1,51 @@
 main#single-service {
-  .section__header {
-    margin-bottom: 90px;
-  }
-
   #about {
+    @include breakpoint($breakpoint-tablet) {
+      padding-bottom: 40px;
+    }
+
     padding-bottom: 60px;
   }
 
   .about {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
 
     &__content {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-right: 60px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        margin-right: 0;
+      }
+
       margin-right: 120px;
     }
 
     &__picture {
+      @include breakpoint($breakpoint-laptop--medium) {
+        width: 530px;
+        height: 680px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        width: 430px;
+        height: 580px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 280px;
+        height: 370px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        margin: 0 auto 40px;
+      }
+
       flex-shrink: 0;
 
       width: 600px;

@@ -6,7 +6,11 @@
   padding-top: 100px;
 
   &:first-child {
-    @include breakpoint($breakpoint-tablet--large) {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding-top: 160px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
       padding-top: 140px;
     }
 

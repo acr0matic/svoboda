@@ -3,36 +3,43 @@
 <main id="single-service">
   <section id="about" class="section">
     <div class="container">
-      <div class="section__header text-center">
-        <h1 class="section__title">
-          ENDOSPHERES Therapy /
-          <br>
-          Эндосфера Терапия для тела в SVOBODA
-        </h1>
-      </div>
-      <!-- /.section__header -->
-
       <div class="about">
-        <div data-editor="default" class="about__content">
-          <p>
-            ENDOSPHERES Therapy / Эндосфера Терапия для тела - революционная процедура для женщин и
-            мужчин по коррекции тела во всем мире в SVOBODA BEAUTY. ENDOSPHERES Therapy позволяет
-            избавиться от лишних сантиметров, отеков и целлюлита свободно, без боли и неприятных ощущений.
-            <br> <br>
-            Оригинальный итальянский аппарат прорабатывает глубокие слои кожи и поверхность эпидермиса, осуществляя не только коррекцию фигуры, но и десквамацию кожи. В результате компрессионной
-            микровибрации происходит мощный лимфодренаж тканей, выводится лишняя жидкость, исчезает
-            общая отечность. ENDOSPHERES Therapy - улучшает кровообращение, венозный отток, активирует
-            выработку собственного коллагена и эластина, формирует рельеф тела, общее состояние кожи,
-            повышает эластичность, тонус, устраняя мелкие морщины.
-            <br> <br>
-            Красивое, упругое и рельефное тело - возможно в SVOBODA.
-          </p>
-        </div>
-        <!-- /.about__content -->
-
-        <picture class="about__picture lazy">
+        <picture class="about__picture lazy d-block d-md-none">
           <img data-src="img/layout/page/single-service/about/1.jpg" src="img/layout/page/single-service/about/1.jpg" class="image image--cover lazy__item lazy__item--blur" alt="">
         </picture>
+
+        <div class="section__header text-center">
+          <h1 class="section__title">
+            ENDOSPHERES Therapy /
+            <br>
+            Эндосфера Терапия для тела в SVOBODA
+          </h1>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="about__wrapper">
+          <div data-editor="default" class="about__content">
+            <p>
+              ENDOSPHERES Therapy / Эндосфера Терапия для тела - революционная процедура для женщин и
+              мужчин по коррекции тела во всем мире в SVOBODA BEAUTY. ENDOSPHERES Therapy позволяет
+              избавиться от лишних сантиметров, отеков и целлюлита свободно, без боли и неприятных ощущений.
+              <br> <br>
+              Оригинальный итальянский аппарат прорабатывает глубокие слои кожи и поверхность эпидермиса, осуществляя не только коррекцию фигуры, но и десквамацию кожи. В результате компрессионной
+              микровибрации происходит мощный лимфодренаж тканей, выводится лишняя жидкость, исчезает
+              общая отечность. ENDOSPHERES Therapy - улучшает кровообращение, венозный отток, активирует
+              выработку собственного коллагена и эластина, формирует рельеф тела, общее состояние кожи,
+              повышает эластичность, тонус, устраняя мелкие морщины.
+              <br> <br>
+              Красивое, упругое и рельефное тело - возможно в SVOBODA.
+            </p>
+          </div>
+          <!-- /.about__content -->
+
+          <picture class="about__picture lazy d-none d-md-block">
+            <img data-src="img/layout/page/single-service/about/1.jpg" src="img/layout/page/single-service/about/1.jpg" class="image image--cover lazy__item lazy__item--blur" alt="">
+          </picture>
+        </div>
+        <!-- /.about__wrapper -->
       </div>
       <!-- /.about -->
     </div>
@@ -49,7 +56,7 @@
       <!-- /.section__header -->
 
       <div class="principle">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between gy-5">
           <div class="column">
             <div class="principle__item">
               <h3 class="principle__title">Во время процедуры</h3>
@@ -263,8 +270,8 @@
       <!-- /.section__header -->
 
       <div class="advantage">
-        <div class="row gy-5">
-          <div class="col-3">
+        <div class="row gy-5 justify-content-center">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -275,9 +282,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -290,9 +297,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -305,9 +312,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -318,9 +325,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -333,9 +340,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -346,9 +353,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -359,9 +366,9 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="advantage__item">
               <img src="img/icons/misc/check.svg" alt="" class="advantage__icon">
               <h3 class="advantage__title">
@@ -373,7 +380,7 @@
             </div>
             <!-- /.advantage__item -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.col-6 col-md-4 col-lg-3 -->
         </div>
         <!-- /.row -->
       </div>
