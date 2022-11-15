@@ -145,4 +145,6 @@
   <?php include_once('layout/blocks/contact.php') ?>
 </main>
 
+<?php include_once('layout/partials/modal/service.php') ?>
+
 <?php include_once('layout/partials/footer.php') ?>

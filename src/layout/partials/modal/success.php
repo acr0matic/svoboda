@@ -2,9 +2,9 @@
   <div class="modal__overlay" data-micromodal-close>
     <div class="modal__container" role="dialog">
       <header class="modal__header">
-        <h2 class="modal__title">
+        <h3 class="modal__title">
           Спасибо!
-        </h2>
+        </h3>
       </header>
 
       <main class="modal__content">

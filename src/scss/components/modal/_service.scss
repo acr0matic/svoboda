@@ -1,0 +1,74 @@
+.modal-service {
+  .modal__container {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 60px 20px 30px;
+    }
+
+    max-width: 1200px;
+    padding: 60px 70px 65px;
+  }
+
+  .modal__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 20px;
+    }
+
+    margin-bottom: 25px;
+  }
+
+  .modal__title,
+  .modal__text {
+    text-align: left;
+  }
+
+  .modal__title {
+    @include breakpoint($breakpoint-tablet) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .modal__text {
+    @include breakpoint($breakpoint-tablet) {
+      padding-right: 15px;
+      font-size: $font-size__text--regular - 2px;
+    }
+
+    overflow: auto;
+    max-height: 230px;
+
+    padding-left: 0;
+    font-size: $font-size__text--regular + 2px;
+  }
+
+  .modal__action {
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 30px;
+
+    .button {
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      margin-right: 40px;
+    }
+
+    & > div {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 15px;
+        font-size: $font-size__title--small;
+      }
+
+      font-size: $font-size__title--medium;
+    }
+  }
+}
