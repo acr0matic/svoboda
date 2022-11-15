@@ -1,4 +1,4 @@
-<div style="display: block;" class="modal modal-service micromodal-slide" id="modal-service" aria-hidden="true">
+<div class="modal modal-service micromodal-slide" id="modal-service" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close>
     <div class="modal__container" role="dialog">
       <header class="modal__header">
@@ -23,7 +23,7 @@
         </p>
 
         <div class="modal__action">
-          <a href="" class="button button-primary">Записаться на услугу</a>
+          <a href="" target="_blank" class="button button-primary">Записаться на услугу</a>
           <div><span>2000</span> ₽</div>
         </div>
         <!-- /.modal__action -->

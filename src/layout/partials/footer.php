@@ -161,6 +161,7 @@
 <script src="scripts/init.js"></script>
 <script src="scripts/header.js"></script>
 <script src="scripts/modal.js"></script>
+<script src="scripts/category.js"></script>
 <script src="scripts/misc.js"></script>
 <script src="scripts/loadmore.js"></script>
 <!-- endbuild -->

@@ -18,6 +18,23 @@ main#service section {
 }
 
 .service-list {
+  &__inner {
+    li {
+      cursor: pointer;
+      transition: $transition ease;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+
   &__accordion {
     &:not(:last-child) {
       @include breakpoint($breakpoint-tablet--large) {
