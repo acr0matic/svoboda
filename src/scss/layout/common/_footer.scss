@@ -81,4 +81,20 @@
 
   &__social {
   }
+
+  &__about {
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column;
+    }
+
+    display: flex;
+
+    a:first-child {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-right: 0;
+      }
+
+      margin-right: 65px;
+    }
+  }
 }

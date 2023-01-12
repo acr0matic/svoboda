@@ -117,8 +117,15 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-8 mt-4 mt-md-5">
-              <a class="link" href="">Политика конфиденциальности</a>
+            <div class="col-12 mt-4 mt-md-5">
+              <div class="footer__about">
+                <a class="link mb-2 mb-sm-0" data-fslightbox="docs" href="">
+                  Сертификаты и лицензии
+                  <a class="d-none" data-fslightbox="docs" href=""></a>
+                </a>
+                <a class="link" href="">Политика конфиденциальности</a>
+              </div>
+              <!-- /.footer__about -->
             </div>
             <!-- /.col-8 -->
           </div>

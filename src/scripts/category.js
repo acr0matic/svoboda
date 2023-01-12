@@ -18,6 +18,7 @@ if (categorySection) {
       title.innerHTML = item.querySelector('.title').innerHTML;
       text.innerHTML = item.querySelector('p').innerHTML;
       price.innerHTML = item.querySelector('.price').innerHTML;
+      button.href = item.querySelector('.link').innerHTML;
 
       MicroModal.show('modal-service', modalParams);
     });
